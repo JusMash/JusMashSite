@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trap Beats - JusMash</title>
+  <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+<body data-genre="trap">
+
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <a href="JusMash.html">
+        <img class="upcorner-logo" src="Images/logoBG.png" alt="JusMash Logo">
+      </a>
+      <ul>
+        <li><a href="JusMash.html">Home</a></li>
+        <li class="dropdown">
+          <a href="beats.html">Beats</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-category" href="beats.html" data-category="all">All</a></li>
+            <li><a class="dropdown-category" href="hiphop.html" data-category="HipHop">Hip Hop</a></li>
+            <li><a class="dropdown-category" href="rnb.html" data-category="R&B">R&B</a></li>
+            <li><a class="dropdown-category" href="afrobeats.html" data-category="Afrobeats">Afrobeats</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="merch.html">Merch</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <div class="cart-icon" id="cart-icon">
+        🛒 <span class="cart-quantity" id="cart-count">0</span>
+      </div>
+      <div class="auth-buttons">
+        <button id="loginBtn">Login</button>
+        <button id="signupBtn">Sign Up</button>
+      </div>
+
+      <div id="cartOverlay" class="cart-overlay"></div>
+
+      <div class="cart-sidebar" id="cart-sidebar">
+        <h2>Your Cart</h2>
+        <div class="cart-items" id="cartItems"></div>
+        <p class="go-to-checkout-btn">Total: R <span id="total-price">0.00</span></p>
+        <a href="checkout.html" id="checkout" class="hidden">Go To Checkout</a>
+        <button id="closeCartBtn" class="close-btn">Close</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero slide-up">
+    <h1>Trap Beats Section</h1>
+    <p>Browse your favorite Trap beats</p>
+  </section>
+
+  <!-- Categories Filter -->
+  <section class="beats-categories slide-up">
+    <a href="beats.html" class="dropdown-category" data-category="all">All</a>
+    <a href="hiphop.html" class="dropdown-category" data-category="HipHop">Hip Hop</a>
+    <a href="rnb.html" class="dropdown-category" data-category="R&B">R&B</a>
+    <a href="afrobeats.html" class="dropdown-category" data-category="Afrobeats">Afrobeats</a>
+    <a href="drill.html" class="dropdown-category" data-category="Drill">Drill</a>
+  </section>
+
+  <!-- Beats Section -->
+  <section id="beats" class="beats fade-in">
+    <div class="beat-list"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+        <p>&copy; 2025 JusMash Store. All Rights Reserved. desinged by:G    Ratshivhombela</p>
+  </footer>
+
+  <!-- JS -->
+  <script type="module" src="Scripts/beats-category.js"></script>
+</body>
+</html>

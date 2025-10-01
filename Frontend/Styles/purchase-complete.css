@@ -1,0 +1,273 @@
+/* Hero Section */
+.body {
+font-family: Arial, sans-serif;
+}
+
+.hero-complete {
+    background-color: #333;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero-complete h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero-complete p {
+    font-size: 1.3rem;
+}
+
+/* Checkout Section Layout */
+.checkout-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Purchased Items */
+.purchased-items-section {
+    flex: 1 1 400px;
+}
+
+.purchased-items-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Purchased Items List */
+.purchased-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    opacity: 1; /* default visible */
+    transition: opacity 0.6s ease;
+}
+
+
+.purchased-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.purchased-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.purchased-item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.purchased-item-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.purchased-item-quantity,
+.purchased-item-price {
+    font-size: 1rem;
+    color: #555;
+}
+
+.total-amount {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Billing Form */
+.billing-section {
+    flex: 1 1 350px;
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.billing-section h2 {
+    margin-bottom: 20px;
+}
+
+.billing-section input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#complete-purchase-btn {
+    width: 100%;
+    background-color: #349c2a;
+    color: white;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#complete-purchase-btn:hover {
+    background-color: #2e8b1f;
+    transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .checkout-main {
+        flex-direction: column;
+    }
+}
+
+/* Checkmark Animation */
+.checkmark-container {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px auto;
+    display: none;
+}
+
+.checkmark {
+    width: 100%;
+    height: 100%;
+    stroke-width: 3;
+    stroke: #349c2a;
+    stroke-miterlimit: 10;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+}
+
+.checkmark-circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 3;
+    stroke-miterlimit: 10;
+    stroke: #349c2a;
+    fill: none;
+    animation: circle 0.6s forwards;
+}
+
+.checkmark-check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: check 0.4s 0.6s forwards;
+}
+
+@keyframes circle { to { stroke-dashoffset: 0; } }
+@keyframes check { to { stroke-dashoffset: 0; } }
+
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Navbar styles */
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333; /* dark navbar */
+  z-index: 1000;
+  position: relative;
+  height: 35px;
+}
+
+
+/* Navbar list */
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar links */
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #349c2a; /* highlight color */
+}
+
+.upcorner-logo {
+  height: 50px;          /* fixed height */
+  width: auto;           /* maintain aspect ratio */
+  object-fit: contain;   /* ensures it scales nicely */
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header nav ul {
+      flex-direction: column;
+  }
+
+  .upcorner-logo {
+      height: 40px;
+      margin-bottom: 10px;
+  }
+
+  header nav ul li a {
+      margin-left: 0;
+      margin-bottom: 10px;
+  }
+}
+
+/* Hero Section */
+.hero {
+  background-color: #333; 
+  color: white;
+  padding: 60px 20px;
+  margin-top: 0; 
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.hero h1 {
+  font-size: 3rem;
+  background-color: #333;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  background-color: #333;
+}

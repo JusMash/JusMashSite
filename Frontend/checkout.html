@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - JusMash</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+    <!-- Navbar (matches index.html) -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                  <a href="JusMash.html">
+                    <img class="upcorner-logo" src="Images/logoBG.png" alt="JusMash Logo">
+                  </a>
+                </li>
+                <li><a href="JusMash.html">Home</a></li>
+                <li><a href="beats.html">Beats</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="merch.html">Merch</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button id="loginBtn">Login</button>
+            <button id="signupBtn">Sign Up</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Checkout</h1>
+        <p>Review your cart and complete your purchase</p>
+    </section>
+
+    <!-- Cart Summary Section -->
+    <section class="beats cart-summary">
+        <h2>Your Cart (<span id="item-count">0</span> items)</h2>
+        <div class="cart-list" id="cart-item-container">
+            <!-- Cart items will be rendered here -->
+        </div>
+        <p>Total Items: <span id="item-count-total">0</span></p>
+        <p>Total: R<span id="total-amount">0.00</span></p>
+        <a href="purchase-complete.html" type="button" id="complete-purchase-btn">Complete Purchase</a>
+
+    </section>
+    <footer>
+        <p>&copy; 2025 JusMash Store. All Rights Reserved. desinged by:G    Ratshivhombela</p>
+    </footer>
+
+    <script type="module" src="Scripts/check.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afrobeats Beats - JusMash</title>
+  <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body data-genre="afrobeats">
+
+  <!-- Auth Modal -->
+<div id="authModal" class="auth-modal">
+  <div class="auth-content">
+    <span id="authClose" class="close">&times;</span>
+
+    <!-- Login Form -->
+    <form id="loginForm" class="auth-form">
+      <h2>Login</h2>
+      <input type="email" id="loginEmail" placeholder="Email" required>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+      <button type="submit" class="auth-btn">Login</button>
+      <p>Don't have an account? <span id="switchToSignup" class="switch-link">Sign up</span></p>
+    </form>
+
+    <!-- Signup Form -->
+    <form id="signupForm" class="auth-form" style="display:none;">
+      <h2>Sign Up</h2>
+      <input type="text" id="signupName" placeholder="Name" required>
+      <input type="email" id="signupEmail" placeholder="Email" required>
+      <input type="password" id="signupPassword" placeholder="Password" required>
+      <button type="submit" class="auth-btn">Sign Up</button>
+      <p>Already have an account? <span id="switchToLogin" class="switch-link">Login</span></p>
+    </form>
+  </div>
+</div>
+
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <a href="JusMash.html">
+        <img class="upcorner-logo" src="Images/logoBG.png" alt="JusMash Logo">
+      </a>
+      <ul>
+        <li><a href="JusMash.html">Home</a></li>
+        <li class="dropdown">
+          <a href="beats.html">Beats</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-category" href="beats.html" data-category="all">All</a></li>
+            <li><a class="dropdown-category" href="trap.html" data-category="Trap">Trap</a></li>
+            <li><a class="dropdown-category" href="hiphop.html" data-category="hiphop">HipHop</a></li>
+            <li><a class="dropdown-category" href="rnb.html" data-category="rnb">R&B</a></li>
+            <li><a class="dropdown-category" href="drill.html" data-category="Drill">Drill</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="merch.html">Merch</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <div class="cart-icon" id="cart-icon">
+        🛒 <span class="cart-quantity" id="cart-count">0</span>
+      </div>
+
+      <div class="auth-buttons">
+        <button id="loginBtn">Login</button>
+        <button id="signupBtn">Sign Up</button>
+      </div>
+
+      <div id="cartOverlay" class="cart-overlay"></div>
+
+      <div class="cart-sidebar" id="cart-sidebar">
+        <h2>Your Cart</h2>
+        <div class="cart-items" id="cartItems"></div>
+        <p class="go-to-checkout-btn">Total: R <span id="total-price">0.00</span></p>
+        <a href="checkout.html" id="checkout" class="hidden">Go To Checkout</a>
+        <button id="closeCartBtn" class="close-btn">Close</button>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero slide-up">
+    <h1>Afrobeats Beats Section</h1>
+    <p>Browse favorite Afrobeats beats</p>
+  </section>
+
+  <!-- Categories Filter -->
+  <section class="beats-categories slide-up">
+    <a href="beats.html" class="dropdown-category" data-category="all">All</a>
+    <a href="trap.html" class="dropdown-category" data-category="trap">Trap</a>
+    <a href="hiphop.html" class="dropdown-category" data-category="hiphop">HipHop</a>
+    <a href="rnb.html" class="dropdown-category" data-category="rnb">R&B</a>
+    <a class="dropdown-category" href="drill.html" data-category="Drill">Drill</a>
+  </section>
+
+  <!-- Beats Section -->
+  <section id="beats" class="beats fade-in">
+    <div class="beat-list"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+        <p>&copy; 2025 JusMash Store. All Rights Reserved. desinged by:G    Ratshivhombela</p>
+  </footer>
+
+  <!-- JS -->
+  <script type="module" src="Scripts/beats-category.js"></script>
+</body>
+</html>

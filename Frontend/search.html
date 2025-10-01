@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results - JusMash</title>
+  <link rel="stylesheet" href="./Styles/search.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+<header>
+  <nav>
+    <a href="JusMash.html"><img src="Images/logoBG.png" alt="Logo" class="upcorner-logo"></a>
+    <ul>
+      <!-- Beats dropdown -->
+      <li class="dropdown">
+        <a href="beats.html">Beats</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-category" href="beats.html" data-category="all">All</a></li>
+          <li><a class="dropdown-category" href="trap.html" data-category="Trap">Trap</a></li>
+          <li><a class="dropdown-category" href="rnb.html" data-category="R&B">R&B</a></li>
+          <li><a class="dropdown-category" href="afrobeats.html" data-category="Afrobeats">Afrobeats</a></li>
+          <li><a class="dropdown-category" href="drill.html" data-category="Drill">Drill</a></li>
+          <li><a class="dropdown-category" href="hiphop.html" data-category="HipHop">HipHop</a></li>
+        </ul>
+      </li>
+
+      <!-- Other links -->
+      <li><a href="merch.html">Merch</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- Main Content -->
+  <main>
+    <h2>Search Results</h2>
+    <div id="search-results-container" class="beat-list search-results-container"></div>
+    <p id="no-results-message" class="hidden">No results found for your search.</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 JusMash Store. All Rights Reserved.</p>
+  </footer>
+
+  <script type="module" src="Scripts/search.js"></script>
+</body>
+</html>

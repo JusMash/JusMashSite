@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merch - JusMash</title>
+  <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="JusMash.html">
+        <img class="upcorner-logo" src="Images/logoBG.png" alt="JusMash Logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="JusMash.html">Home</a></li>
+        <li><a href="beats.html">Beats</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="merch.html">Merch</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <div class="cart-icon" id="cart-icon">
+        🛒 <span class="cart-quantity" id="cart-count">0</span>
+      </div>
+      <div class="auth-buttons">
+        <button id="loginBtn">Login</button>
+        <button id="signupBtn">Sign Up</button>
+      </div>
+    </nav>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+      <h2>Your Cart</h2>
+      <ul class="cart-items" id="cartItems"></ul>
+      <div>
+        <p>Total: R<span id="total-price">0.00</span></p>
+        <a href="checkout.html" id="checkout" class="hidden">Go To Checkout</a>
+        <button id="closeCartBtn" class="close-btn">Close</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="beats slide-up">
+    <h2>You are now in the merch page</h2>
+    <div class="beat-list merch-list"></div>
+  </section>
+
+  <footer>
+        <p>&copy; 2025 JusMash Store. All Rights Reserved. desinged by:G    Ratshivhombela</p>
+  </footer>
+
+  <script type="module" src="Scripts/merch.js"></script>
+</body>
+</html>

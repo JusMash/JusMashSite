@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - JusMash</title>
+  <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+<body>
+
+<header>
+  <a href="JusMash.html"><img src="Images/logoBG.png" class="upcorner-logo" alt="JusMash Logo"></a>
+  <div class="auth-buttons">
+    <button id="loginBtn">Login</button>
+    <button id="signupBtn">Sign Up</button>
+  </div>
+</header>
+
+<main class="auth-section">
+  <h2>Sign Up</h2>
+  <form id="signupForm">
+    <label>Name:</label>
+    <input type="text" id="name" required>
+    <label>Email:</label>
+    <input type="email" id="email" required>
+    <label>Password:</label>
+    <input type="password" id="password" required>
+    <button type="submit">Sign Up</button>
+  </form>
+  <p>Already have an account? <a href="login.html">Login</a></p>
+</main>
+
+<script type="module" src="./Scripts/newmain.js"></script>
+</body>
+</html>

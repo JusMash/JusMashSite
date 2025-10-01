@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Purchase - JusMash</title>
+    <link rel="stylesheet" href="Styles/purchase-complete.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <a href="JusMash.html">
+                <img class="upcorner-logo" src="Images/logoBG.png" alt="JusMash Logo">
+            </a>
+            <ul>
+                <li><a href="JusMash.html">Home</a></li>
+                <li><a href="beats.html">Beats</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="merch.html">Merch</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Complete Your Purchase</h1>
+        <p>Review your order and fill out your billing info</p>
+    </section>
+
+    <!-- Main Checkout Section -->
+    <section class="checkout-main">
+        <!-- Purchased Items -->
+        <div class="purchased-items-section">
+            <h2>Your Cart</h2>
+
+            <!-- Checkmark Animation -->
+            <div id="checkmark-container" class="checkmark-container">
+                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                    <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                    <path class="checkmark-check" fill="none" d="M14 27l7 7 16-16"/>
+                </svg>
+            </div>
+
+            <div class="purchased-items" id="purchased-items"></div>
+            <div class="total-amount" id="total-amount"></div>
+        </div>
+
+        <!-- Billing Form -->
+        <div class="billing-section">
+            <h2>Billing Information</h2>
+            <form id="billing-form">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="text" id="address" placeholder="Address" required>
+                <input type="text" id="city" placeholder="City" required>
+                <input type="text" id="zip" placeholder="ZIP / Postal Code" required>
+                <button type="submit" id="complete-purchase-btn">Complete Purchase</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 JusMash Store. All Rights Reserved. desinged by:G    Ratshivhombela</p>
+    </footer>
+
+    <script src="Scripts/purchase-complete.js"></script>
+</body>
+</html>
