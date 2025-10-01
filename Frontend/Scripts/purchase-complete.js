@@ -55,6 +55,6 @@ billingForm.addEventListener("submit", (e) => {
 
     // Optional redirect after 3 seconds
     setTimeout(() => {
-        window.location.href = "JusMash.html";
+        window.location.href = "index.html";
     }, 3000);
 });
